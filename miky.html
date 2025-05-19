@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noline Academy | Support Free Learning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 text-white text-center">
+    <h1 class="text-3xl font-extrabold">Noline Academy</h1>
+    <p class="mt-2 text-lg">Empowering learners globally with free education</p>
+  </header>
+
+  <!-- About -->
+  <section class="p-8 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-4">Why We Do This</h2>
+    <p class="text-gray-600">
+      At Noline Academy, we believe education should be accessible to everyone. We offer free tutorials in science, coding, and critical thinking for students worldwide—especially in underserved regions.
+    </p>
+  </section>
+
+  <!-- Donation Progress -->
+  <section class="py-8 bg-blue-50 px-6 text-center">
+    <h2 class="text-xl font-bold text-blue-900">Donation Goal</h2>
+    <p class="text-gray-700">Help us reach $1,000 to build more learning resources</p>
+    <div class="w-full max-w-md mx-auto mt-4 bg-gray-300 rounded-full h-6">
+      <div id="progress-bar" class="bg-green-500 h-6 rounded-full" style="width: 45%;"></div>
+    </div>
+    <p class="text-sm text-gray-600 mt-1">Raised: $<span id="raised-amount">450</span> / $1000</p>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="bg-white py-10 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-800">Support Our Mission</h2>
+      <p class="text-gray-600 mt-2">Your donation helps us create more free content and reach more students globally.</p>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <!-- PayPal -->
+        <div class="border rounded-xl p-4 shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">PayPal</h3>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=2LG7UQEH9QM6L" target="_blank"
+             class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded w-full block text-center">
+            Donate via PayPal
+          </a>
+        </div>
+
+        <!-- Binance -->
+        <div class="border rounded-xl p-4 shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Binance (Crypto)</h3>
+          <p class="text-sm text-gray-500 mb-2">Send USDT (TRC20 or BEP20) to:</p>
+          <div class="bg-gray-100 p-2 rounded break-words text-sm">YOUR_BINANCE_WALLET_ADDRESS</div>
+        </div>
+
+        <!-- Airtm -->
+        <div class="border rounded-xl p-4 shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Airtm</h3>
+          <p class="text-sm text-gray-500 mb-2">Send to Airtm username:</p>
+          <div class="bg-gray-100 p-2 rounded break-words text-sm">@your_airtm_username</div>
+        </div>
+      </div>
+
+      <p class="text-sm mt-6 text-gray-500">We accept donations in all currencies via PayPal and crypto. Every amount helps.</p>
+    </div>
+  </section>
+
+  <!-- Email Subscription Form -->
+  <section class="bg-gray-50 py-12 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+      <p class="text-gray-600 mb-6">Join our newsletter for updates on new tutorials and resources (optional).</p>
+      <form id="email-form" class="flex flex-col sm:flex-row gap-4 justify-center">
+        <input type="email" id="email-input" placeholder="Enter your email" class="p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Subscribe</button>
+      </form>
+      <p id="form-message" class="text-sm text-gray-600 mt-2"></p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-gray-50 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">What People Are Saying</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-xl shadow text-left">
+          <img src="https://i.pravatar.cc/150?img=3" alt="Testimonial 1" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p class="italic text-gray-600">"Noline Academy helped me understand coding basics when I had no access to paid courses."</p>
+          <p class="mt-2 font-semibold text-sm text-gray-700 text-center">— Faith, Kenya</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow text-left">
+          <img src="https://i.pravatar.cc/150?img=5" alt="Testimonial 2" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p class="italic text-gray-600">"I passed my physics exams thanks to their free tutorials. God bless this team!"</p>
+          <p class="mt-2 font-semibold text-sm text-gray-700 text-center">— Juan, Colombia</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow text-left">
+          <img src="https://i.pravatar.cc/150?img=8" alt="Testimonial 3" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p class="italic text-gray-600">"Thanks to Noline Academy, I got a scholarship because of my improved math skills."</p>
+          <p class="mt-2 font-semibold text-sm text-gray-700 text-center">— Aisha, Nigeria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 text-sm">
+    © 2025 Noline Academy • Empowering Through Education
+  </footer>
+
+  <!-- Firebase JavaScript -->
+  <script type="module">
+    // Import Firebase modules
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js';
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js';
+    import { getFirestore, doc, onSnapshot, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js';
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDKOq5uPPXjpP8_poIjoC-Yt8wfzTEiIgE",
+      authDomain: "noline-academy.firebaseapp.com",
+      databaseURL: "https://noline-academy-default-rtdb.firebaseio.com",
+      projectId: "noline-academy",
+      storageBucket: "noline-academy.firebasestorage.app",
+      messagingSenderId: "81670736942",
+      appId: "1:81670736942:web:8f0e71001dd95e5ce823bf",
+      measurementId: "G-VDBQP7KEZ6"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+
+    // Update donation progress
+    const progressBar = document.getElementById('progress-bar');
+    const raisedAmount = document.getElementById('raised-amount');
+
+    onSnapshot(doc(db, 'donations', 'progress'), (docSnapshot) => {
+      if (docSnapshot.exists()) {
+        const data = docSnapshot.data();
+        const amount = data.raised || 450;
+        const goal = 1000;
+        const percentage = (amount / goal) * 100;
+        progressBar.style.width = `${percentage}%`;
+        raisedAmount.textContent = amount;
+      }
+    });
+
+    // Email form submission
+    const emailForm = document.getElementById('email-form');
+    const emailInput = document.getElementById('email-input');
+    const formMessage = document.getElementById('form-message');
+
+    emailForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (email) {
+        try {
+          await addDoc(collection(db, 'subscribers'), {
+            email,
+            timestamp: serverTimestamp()
+          });
+          formMessage.textContent = 'Thank you for subscribing!';
+          formMessage.classList.add('text-green-600');
+          emailInput.value = '';
+        } catch (error) {
+          formMessage.textContent = 'Error subscribing. Please try again.';
+          formMessage.classList.add('text-red-600');
+        }
+      } else {
+        formMessage.textContent = 'Please enter a valid email.';
+        formMessage.classList.add('text-red-600');
+      }
+    });
+  </script>
+</body>
+</html>
